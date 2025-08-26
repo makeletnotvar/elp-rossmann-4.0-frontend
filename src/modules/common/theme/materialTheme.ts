@@ -46,6 +46,9 @@ export const theme = createTheme({
 				size: 'small',
 			},
 		},
+		MuiCheckbox: {
+			defaultProps: { size: 'small' },
+		},
 		MuiIconButton: {
 			styleOverrides: {
 				root: {
