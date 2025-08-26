@@ -1,0 +1,96 @@
+@import 'styles/colors.module.scss';
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.listContainer {
+	flex-grow: 1;
+	user-select: none;
+	min-width: 30%;
+	max-width: 100%;
+	margin: 2px 0 2px 2px;
+	display: flex;
+	flex-flow: column nowrap;
+
+	@include xl {
+		max-width: 30%;
+	}
+
+	.listWrapper {
+		flex-grow: 1;
+		overflow-y: auto;
+
+		@extend .scrollbar;
+
+		.subheader {
+			margin-bottom: 10px;
+			background: #fff;
+		}
+
+		.list {
+			padding: 10px;
+
+			.item {
+				border-bottom: 1px solid #eee;
+				padding: 3px 10px;
+				display: flex;
+
+				&.active {
+					background: var(--secondary-lighten-color);
+				}
+
+				span {
+					font-size: 0.8em;
+					display: inline-block;
+					width: 150px;
+					white-space: nowrap;
+					overflow: hidden !important;
+					text-overflow: ellipsis;
+				}
+
+				.name {
+					align-self: center;
+					font-weight: 400;
+				}
+
+				.count {
+					align-self: center;
+					font-weight: 300;
+					opacity: 0.5;
+				}
+
+				.icon {
+					align-self: center;
+					display: flex;
+					justify-content: center;
+
+					svg {
+						opacity: 0.5;
+						width: 20px;
+						height: 20px;
+					}
+				}
+
+				.action {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+
+	.actions {
+		background: #eee;
+		text-align: right;
+		padding: 10px;
+		> * {
+			margin: 0 5px;
+		}
+
+		.addContainer {
+			display: inline-block;
+
+			.edit {
+				margin: 0 5px;
+			}
+		}
+	}
+}

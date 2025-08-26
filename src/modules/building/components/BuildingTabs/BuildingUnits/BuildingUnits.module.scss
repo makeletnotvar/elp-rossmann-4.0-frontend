@@ -1,0 +1,87 @@
+@import 'styles/colors.module.scss';
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	user-select: none;
+	height: 100%;
+	gap: 6px;
+	background-color: #fefefe;
+
+	@include md {
+		flex-flow: row nowrap;
+		overflow: hidden;
+	}
+}
+
+.unitsInfoConfigContainer {
+	border: 1px solid #eee;
+	padding: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+
+	.label {
+		font-size: 1em;
+		display: block;
+		padding: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-weight: 300;
+		background: #eee;
+	}
+}
+
+.header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+
+	.wrapper {
+		display: flex;
+		flex-flow: column nowrap;
+
+		.name {
+			font-size: 25px;
+			margin: 0px 5px 0px 5px;
+		}
+
+		.xid {
+			font-size: 15px;
+			margin: 0px 0px 5px 5px;
+			color: #ccc;
+		}
+	}
+}
+
+.unitsInfo {
+	display: flex;
+	flex-direction: column;
+
+	.editButton {
+		padding: 4.8px 4.8px 4.8px 5px;
+	}
+
+	.labelConfig {
+		font-size: 14px;
+		margin: 4.8px 4.8px 4.8px 0px;
+	}
+
+	.inputConfig {
+		font-size: 14px;
+		margin: 4.8px 4.8px 4.8px 0px;
+	}
+}
+
+.unitsConfig {
+	display: flex;
+	flex-direction: column;
+}
+
+.no_points {
+	font-size: 0.7em;
+	font-weight: 500;
+	padding: 18px 12px;
+	color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,112 @@
+@import 'styles/colors.module.scss';
+
+.group {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0px;
+	user-select: none;
+	border-top: 1px solid #ccc;
+	max-height: 0px;
+	overflow: hidden;
+	transition: 0.3s max-height cubic-bezier(0.77, 0, 0.175, 1);
+
+	&.collapsed {
+		max-height: 400px !important;
+	}
+
+	.param {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0;
+		border-bottom: 1px solid #ccc;
+
+		.label {
+			font-size: 7pt;
+			width: 45%;
+			align-self: center;
+			padding: 2px 5px;
+			text-align: right;
+			text-transform: uppercase;
+			color: #777777;
+			max-width: 45%;
+			flex-grow: 0;
+			overflow: hidden;
+		}
+
+		.inputContainer {
+			align-self: center;
+			width: 50%;
+			font-size: 8pt;
+			padding: 2px;
+			border-left: 1px solid #cccccc88;
+
+			input {
+				outline: 0;
+			}
+
+			input[type='color'] {
+				height: 15px;
+				width: 15px;
+				padding: 0;
+				border: 0;
+			}
+
+			input[type='text'],
+			input[type='number'] {
+				margin: 0;
+				font-size: 8pt;
+				line-height: 8px;
+				height: 8pt;
+				background: #fff;
+				border: 1px solid #aaa;
+				padding: 2px 2px;
+				width: 50px;
+			}
+
+			select {
+				font-size: 8pt;
+			}
+
+			span {
+				padding-left: 2px;
+				color: #aaa;
+			}
+		}
+	}
+}
+
+.groupLabelContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 10px);
+	background: #3d3d3d;
+	color: #fff;
+	padding: 8px 5px;
+	font-size: 7pt;
+	text-transform: uppercase;
+	user-select: none;
+	cursor: pointer;
+}
+
+.groupLabel {
+	display: flex;
+
+	> svg {
+		width: 12px;
+		height: 12px;
+		align-self: center;
+		margin-right: 3px;
+	}
+
+	> span {
+		align-self: center;
+	}
+}
+
+.topSeparator {
+	margin-top: 5px;
+}

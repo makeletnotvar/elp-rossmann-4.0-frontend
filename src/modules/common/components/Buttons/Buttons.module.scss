@@ -1,0 +1,14 @@
+@import 'styles/colors.module.scss';
+
+.cancelButton {
+	margin-right: 5px;
+}
+
+.clearButton {
+	margin-right: 5px;
+}
+
+.deleteButton {
+	margin-right: 5px;
+	color: $button-delete-color;
+}

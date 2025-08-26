@@ -1,0 +1,33 @@
+@import 'styles/colors.module.scss';
+
+.container {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.label {
+	color: inherit;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+.empty {
+	color: #888;
+}
+
+.selectPointLink {
+	color: $primary-color;
+	font-weight: 500;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.newTemplate {
+	padding: 10px;
+}
+
+.newTemplateMorePadding {
+	padding: 25px;
+}

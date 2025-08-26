@@ -1,0 +1,88 @@
+@import 'styles/colors.module.scss';
+
+.container {
+	text-align: center;
+
+	.title {
+	}
+
+	.text2 {
+		margin-top: 20px;
+	}
+
+	.text3 {
+		margin-top: 10px;
+	}
+
+	.text5 {
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	.codeContainer {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+
+		.codeInput {
+			width: 300px;
+			text-align: center;
+			margin: 10px auto;
+			input {
+				text-align: center;
+			}
+		}
+	}
+
+	.testButton {
+		margin: 20px;
+	}
+}
+
+.device {
+	color: #555;
+	padding: 10px;
+	background: #eee;
+	width: 300px;
+	margin: 20px auto;
+
+	h6 {
+		color: $primary-color;
+		margin: 5px;
+	}
+
+	img {
+		margin: 10px;
+	}
+}
+
+.progressWrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 500px;
+	margin: auto;
+	justify-content: center;
+
+	.progress {
+		width: 200px;
+	}
+
+	> div {
+		align-self: center;
+
+		svg {
+			width: 80px;
+			height: 47px;
+			fill: $primary-color;
+		}
+	}
+}
+
+.form {
+	> div {
+		flex-flow: column nowrap !important;
+		> div {
+			margin-bottom: 20px !important;
+		}
+	}
+}

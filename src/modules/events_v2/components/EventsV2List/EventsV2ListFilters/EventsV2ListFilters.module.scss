@@ -1,0 +1,16 @@
+@import 'styles/rwd.module.scss';
+@import 'styles/spacings.module.scss';
+
+.dialog {
+	user-select: none;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: $spacing-medium;
+	}
+
+	.actions {
+		padding: $spacing-medium;
+	}
+}

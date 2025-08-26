@@ -1,0 +1,8 @@
+@import 'styles/colors.module.scss';
+
+.consumptions {
+    display: flex;
+    width: calc(100% - 5px);
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+}

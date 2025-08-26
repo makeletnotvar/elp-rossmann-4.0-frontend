@@ -1,0 +1,51 @@
+.vhmiContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	padding: 0.25rem;
+}
+
+.vhmiBreadcumbsContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	width: calc(100% - 10px);
+	position: sticky;
+	top: 0;
+	padding: 5px;
+	height: 12px;
+	min-height: 12px;
+	max-height: 12px;
+	padding-top: 12px;
+
+	.vhmiBreadcumbs {
+		width: 100%;
+
+		> ol {
+			max-height: 25px;
+			min-height: 25px;
+		}
+
+		.vhmiLink {
+			font-size: 0.725rem;
+			color: #616161;
+			text-decoration: none;
+			cursor: pointer;
+
+			&.disabled {
+				color: #969696;
+				cursor: default;
+			}
+		}
+	}
+}
+
+.vhmiDialogContent {
+	height: 800px;
+	padding: 0 !important;
+}
+
+.vhmiDialogTitle {
+	padding: 10px 6px 10px 6px;
+}

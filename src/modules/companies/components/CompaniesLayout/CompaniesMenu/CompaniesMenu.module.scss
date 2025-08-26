@@ -1,0 +1,37 @@
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+$size: 57px;
+
+.list {
+    padding: 0;
+    flex-flow: row nowrap;
+    overflow: auto;
+    width: 100vw;
+
+    @extend .scrollbar;
+
+    @media(max-width: $screen-sm-min){      
+        max-width: 100vw;
+        min-width: 100vw;
+        width: 100vw;
+    }
+
+    @include md {
+        flex-flow: column nowrap;
+        width: auto;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .item {
+        height: $size;
+        width: $size;
+    }
+
+    &>.label {
+        padding: 12px 6px;
+        text-align: center;
+        font-size: 8pt;
+        background: #ffdd00; 
+    }
+}

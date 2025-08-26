@@ -1,0 +1,71 @@
+.paper {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	max-width: 100%;
+	height: 50px;
+	background-color: transparent;
+	box-shadow: none;
+	border-right: 1px solid #ddd;
+	flex-basis: 288px;
+
+	&.mobile {
+		flex-basis: calc(100% - 5px);
+	}
+}
+
+.topRow {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	height: 22px;
+}
+
+.labelBox {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.customIcon {
+	font-size: 0.75rem;
+	color: #606060;
+}
+
+.labelText {
+	font-size: 0.688rem;
+	color: #606060;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 220px;
+	text-overflow: ellipsis;
+}
+
+.valueRow {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 2px;
+	margin-top: -2px;
+}
+
+.valueText {
+	font-size: 1rem;
+	white-space: nowrap;
+	line-height: 1.25;
+	overflow: hidden;
+	max-width: 220px;
+	text-overflow: ellipsis;
+}
+
+.link {
+	color: #205de0;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

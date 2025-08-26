@@ -1,0 +1,64 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	bottom: 1%;
+	background: rgba(0, 0, 0, 0);
+	width: 50px;
+	left: 35px;
+	z-index: 1000;
+	flex-flow: column nowrap;
+	user-select: none;
+	border-radius: 0 !important;
+
+	.titleWrapper {
+		border-bottom: 1px solid #aaa;
+		background: #eee;
+
+		.title {
+			font-weight: 400;
+			font-size: 9pt;
+			color: #888;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 5px;
+	}
+
+	.item {
+		display: flex;
+		align-items: center;
+		border-radius: 8px;
+		background-color: #fff;
+
+		.itemIcon {
+			padding: 6px;
+			cursor: default;
+			color: #6d6c6c;
+		}
+
+		.itemText {
+			white-space: nowrap;
+			padding: 2px 6px 2px 6px;
+			border-radius: 8px;
+			min-width: 25px;
+			font-size: 0.813rem;
+		}
+	}
+
+	.alarmsWithPriorityContainer {
+		display: flex;
+		flex-direction: column;
+	}
+}

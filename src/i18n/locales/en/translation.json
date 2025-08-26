@@ -1,0 +1,13 @@
+{
+    "auth": {
+        "login": "Login",
+        "login_into_system": "Sign in to system",
+        "veryfing": "Veryfing...",
+        "password": "Password",
+        "username": "Username",
+        "events": {            
+            "200": "Correct. Redirecting...",
+            "401": "Incorrect login data. Try again..."
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import 'styles/colors.module.scss';
+
+.label {
+	color: inherit;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+.empty {
+	color: #888;
+}
+
+.dialogTitle {
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background: #fff;
+	color: #333;
+	font-weight: 400;
+	font-size: 1.25em;
+
+	> * {
+		align-self: center;
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.alarm {
+	display: flex;
+	gap: 10px;
+}
+
+.alarm:hover {
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
+
+.none {
+	color: rgba($event-none-color, 1) !important;
+}
+
+.urgent {
+	color: rgba($event-urgent-color, 1);
+}
+
+.information {
+	color: rgba($event-information-color, 1);
+}
+
+.critical {
+	color: rgba($event-critical-color, 1);
+}
+
+.lifesafety {
+	color: rgba($event-life-safety-color, 1);
+}

@@ -1,0 +1,48 @@
+.container {
+	display: flex;
+	max-height: 32px;
+	overflow: hidden;
+	.actions {
+		line-height: 100%;
+	}
+}
+
+.numeric {
+	.button {
+		margin: 3px;
+
+		&.decrement {
+			svg {
+				fill: blue;
+			}
+		}
+
+		&.increment {
+			svg {
+				fill: red;
+			}
+		}
+	}
+}
+
+.select {
+	min-width: 150px;
+	max-height: 25px;
+	min-height: 25px;
+}
+
+input.number {
+	width: 70px;
+	background: transparent;
+	border: 0;
+	font-size: inherit;
+}
+
+input.number[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input.number::-webkit-outer-spin-button,
+input.number::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}

@@ -1,0 +1,1 @@
+export default ['NONE', 'INFORMATION', 'URGENT', 'CRITICAL', 'LIFE_SAFETY'];

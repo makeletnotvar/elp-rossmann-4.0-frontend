@@ -1,0 +1,49 @@
+@import 'styles/colors.module.scss';
+
+.bar {
+	background: $header-bg-color;
+	font-size: 8pt;
+	height: 20px;
+	width: 100%;
+	color: #eee;
+	padding: 0 2px;
+	box-sizing: border-box;
+	display: flex;
+	z-index: 2999;
+	margin-top: auto;
+
+	user-select: none;
+
+	.right {
+		margin-left: auto;
+		margin-right: 10px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.zoom {
+		margin-left: auto;
+		margin-right: 10px;
+		line-height: 20px;
+		cursor: pointer;
+	}
+
+	.icon {
+		padding: 4px;
+		align-self: center;
+
+		svg {
+			width: 14px;
+			height: 14px;
+		}
+
+		&.focus {
+			opacity: 0.5;
+			margin-left: auto;
+
+			&.active {
+				opacity: 1;
+			}
+		}
+	}
+}

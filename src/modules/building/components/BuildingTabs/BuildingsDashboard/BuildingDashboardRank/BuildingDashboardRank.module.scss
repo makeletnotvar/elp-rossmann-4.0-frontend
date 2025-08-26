@@ -1,0 +1,67 @@
+.container {
+    min-width: 400px;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.param {
+    width: 50%;
+    height: 100%;
+
+    .rank {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .label {
+            font-size: 10pt;
+        }
+
+        .value {
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            flex-flow: column nowrap;
+
+
+            strong {
+                font-size: 1.75em;
+                font-weight: 400;
+            }
+
+            span {
+                font-size: 0.7em;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .rate {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #ddd;
+
+        .label {
+            font-size: 10pt;
+        }
+
+        .value {
+            font-size: 3.5em;
+        }
+
+        .stars {
+            svg {
+                fill: #fbb034;
+                width: 16px;
+            }
+        }
+    }
+}

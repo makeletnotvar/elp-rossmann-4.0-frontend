@@ -1,0 +1,16 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	height: 100%;
+}
+
+.code {
+	width: 40px !important;
+	max-width: 40px !important;
+}
+
+.alarms {
+	width: 60px !important;
+	max-width: 60px !important;
+}

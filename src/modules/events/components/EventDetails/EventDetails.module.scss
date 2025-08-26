@@ -1,0 +1,106 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+
+.dialog {
+	.title {
+		padding: 10px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		background: #fff;
+		color: #333;
+		font-weight: 400;
+		font-size: 1.25em;
+
+		> * {
+			align-self: center;
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+
+		.closeButton {
+			margin-left: auto;
+			align-self: center;
+
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+
+	.label {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: max-content;
+		overflow: hidden;
+	}
+
+	.actions {
+		background-color: #fff;
+		margin-top: auto;
+	}
+
+	.content {
+		display: flex;
+		flex-flow: row wrap;
+		flex: 0 0 auto;
+		max-height: calc(100% - 160px);
+		overflow: auto;
+
+		@extend .scrollbar;
+
+		@include rwd(600) {
+			flex: 1 1 auto;
+		}
+
+		// reset Params component styles
+		.params {
+			padding: 0;
+			margin: 0;
+			border-left: 0;
+			border-bottom: 0;
+			display: flex;
+			flex-flow: column wrap;
+			flex-basis: 350px;
+			flex-shrink: 1;
+			flex-grow: 1;
+
+			.param {
+				flex-basis: 100%;
+				margin: 0;
+				border: 1px solid #eee;
+				border-radius: 3px;
+				margin: 3px;
+				font-size: 0.8em;
+
+				@include md {
+					padding: 2em 2em;
+					font-size: 1em;
+				}
+
+				&.inactive {
+					opacity: 0.5;
+					svg {
+						fill: #ddd;
+					}
+				}
+
+				svg {
+					fill: $secondary-color;
+				}
+			}
+		}
+	}
+}
+
+.wrapper {
+	padding-left: 0px !important;
+}
+
+.param {
+	padding-left: 0px !important;
+}

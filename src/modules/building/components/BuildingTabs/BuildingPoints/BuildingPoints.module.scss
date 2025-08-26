@@ -1,0 +1,55 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.table {
+	td,
+	th {
+		background: #fff;
+		white-space: nowrap;
+		font-size: 10pt;
+		padding: 4px 10px;
+
+		@include md {
+			padding: 5px;
+		}
+	}
+
+	th {
+		background: #eee;
+		color: #333;
+		font-weight: 400;
+		font-size: 8pt;
+		padding: 12px 10px;
+		position: sticky;
+		top: 0;
+		z-index: 9;
+	}
+}
+
+.container {
+	height: 100%;
+}
+
+.wrapper {
+	height: 100% !important;
+	max-height: 100% !important;
+}
+
+// Params
+.id,
+.type {
+	min-width: 30px;
+	width: 30px;
+	max-width: 30px;
+	text-align: right;
+	padding: 0;
+
+	@include md {
+		padding: 5px;
+	}
+}
+
+.value {
+	font-weight: 500;
+	min-width: 150px;
+}

@@ -1,0 +1,20 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+@import 'styles/fontSizes.module.scss';
+
+.comment {
+	margin: 5px 10px 5px 10px;
+	padding: 10px 0px 10px 0px;
+	max-width: 298px;
+}
+
+.radioGroupLabel {
+	color: rgba(0, 0, 0, 0.54);
+	padding: 0;
+	font-size: $fontSize-tiny !important;
+	font-weight: 400;
+	line-height: 1;
+	padding-top: 6px;
+	letter-spacing: 0.00938em;
+}

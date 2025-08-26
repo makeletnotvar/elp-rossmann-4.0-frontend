@@ -1,0 +1,57 @@
+.pipe {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	-webkit-box-shadow: inset 0px 0px 3px 1px rgba(66, 68, 90, 1);
+	-moz-box-shadow: inset 0px 0px 3px 1px rgba(66, 68, 90, 1);
+	box-shadow: inset 0px 0px 3px 1px rgba(66, 68, 90, 1);
+}
+
+.label {
+	color: inherit;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+.empty {
+	color: #bbb;
+}
+
+.rect {
+	display: block;
+}
+
+.menu {
+	padding: 0;
+	> div {
+		> ul {
+			padding: 0;
+		}
+	}
+	.menuItem {
+		display: flex;
+		gap: 10px;
+		padding: 0 5px 0 5px;
+		font-size: 12px;
+		height: 26px;
+		border-bottom: 1px dotted #ddd;
+		> * {
+			font-size: 15px;
+		}
+		> div {
+			> span {
+				font-size: 12px;
+			}
+		}
+
+		> svg:nth-child(2) {
+			margin-left: 53px;
+		}
+	}
+
+	.menuItem:nth-child(1) {
+		border-top: 1px dotted #ddd;
+	}
+}

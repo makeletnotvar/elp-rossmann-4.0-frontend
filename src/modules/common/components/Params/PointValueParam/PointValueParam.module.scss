@@ -1,0 +1,98 @@
+@import 'styles/colors.module.scss';
+
+.container {
+	display: flex;
+
+	.actions {
+		display: flex;
+		> * {
+			margin: 0 3px;
+
+			.confirmIcon {
+				fill: $success-color;
+
+				&.fetching {
+					fill: $cancel-color !important;
+				}
+			}
+
+			.cancelIcon {
+				fill: $cancel-color;
+			}
+		}
+	}
+}
+
+.setpointButton {
+	align-self: center;
+}
+
+.context {
+	li {
+		svg {
+			margin-right: 10px;
+			fill: #ccc;
+		}
+		div {
+			color: #555;
+			font-size: 10pt;
+			margin: 2px !important;
+		}
+	}
+}
+
+.menu {
+	padding: 0;
+	> div {
+		> ul {
+			padding: 0;
+		}
+	}
+	.menuItem {
+		display: flex;
+		gap: 7px;
+		padding: 0 7px 0 7px;
+		font-size: 12px;
+		height: 26px;
+		> * {
+			font-size: 15px;
+		}
+		> div {
+			> span {
+				font-size: 12px;
+			}
+		}
+
+		> svg:nth-child(2) {
+			margin-left: 53px;
+		}
+	}
+}
+
+.button {
+	margin-right: 14px;
+}
+
+.dialogTitle {
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background: #fff;
+	color: #333;
+	font-weight: 400;
+	font-size: 1.25em;
+
+	> * {
+		align-self: center;
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.dialogContent {
+	padding: 8px 17px;
+}

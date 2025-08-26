@@ -1,0 +1,1 @@
+export const MANUFAKTURA_CODE: number = 334;

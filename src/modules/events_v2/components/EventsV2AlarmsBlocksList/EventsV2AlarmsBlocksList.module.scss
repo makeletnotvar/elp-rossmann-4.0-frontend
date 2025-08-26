@@ -1,0 +1,40 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	height: 100%;
+
+	&.isBuilding {
+		height: calc(100% - 45px);
+	}
+}
+
+.wrapper {
+	height: calc(100% - 159px);
+	max-height: calc(100% - 159px);
+
+	&.isBuilding {
+		height: calc(100% - 60px);
+		max-height: calc(100% - 60px);
+	}
+}
+
+.status {
+	max-width: 180px;
+	width: 180px;
+}
+
+.active {
+	max-width: 120px;
+	width: 120px;
+}
+
+.comment {
+	max-width: 80px;
+	width: 80px;
+}
+
+.user {
+	max-width: 120px;
+	width: 120px;
+}

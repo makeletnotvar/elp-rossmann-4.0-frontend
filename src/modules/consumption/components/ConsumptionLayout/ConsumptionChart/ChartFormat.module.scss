@@ -1,0 +1,33 @@
+@import 'styles/colors.module.scss';
+
+.tooltip {
+	font-size: 0.9em;
+
+	> .title {
+		font-size: 1em;
+		font-weight: 500;
+		text-transform: capitalize;
+		padding: 5px 0;
+	}
+
+	> .range {
+		padding: 5px 0;
+		> span {
+			color: #aaa;
+			> strong {
+				font-weight: 200;
+				color: #333;
+
+				&.value {
+					color: $primary-color;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+.consumption {
+	color: $primary-color;
+	font-weight: 500;
+}

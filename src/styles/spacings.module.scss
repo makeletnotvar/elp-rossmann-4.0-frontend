@@ -1,0 +1,21 @@
+$spacing-none: 0px;
+$spacing-extraSmall: 4px; // 1dp
+$spacing-small: 8px; // 2dp
+$spacing-extraMedium: 12px;
+$spacing-medium: 16px; // 4dp
+$spacing-large: 24px; // 6dp
+$spacing-extraLarge: 32px; // 8dp
+$spacing-doubleExtraLarge: 48px; // 12dp
+$spacing-tripleExtraLarge: 64px; // 16dp
+
+:export {
+	none: $spacing-none;
+	extraSmall: $spacing-extraSmall;
+	small: $spacing-small;
+	extraMedium: $spacing-extraMedium;
+	medium: $spacing-medium;
+	large: $spacing-large;
+	extraLarge: $spacing-extraLarge;
+	doubleExtraLarge: $spacing-doubleExtraLarge;
+	tripleExtraLarge: $spacing-tripleExtraLarge;
+}

@@ -1,0 +1,20 @@
+.value {
+	display: hidden;
+	width: 140px;
+	height: 30px;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
+	font-size: 13px;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.value:focus {
+	outline: none;
+}
+
+.stateSelector {
+	width: 200px !important;
+}

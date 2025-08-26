@@ -1,0 +1,18 @@
+
+import * as React from 'react';
+import { useState } from 'react';
+
+const TestDemo: React.FC<{initial?: boolean, onClick?: any}> = ({initial, onClick}) => {
+    const [toggled, setToggled] = useState<boolean>(initial || false);
+
+    const handleClick = () => {
+        setToggled(!toggled);
+        onClick && onClick();
+    }
+
+    return (
+        <button onClick={handleClick}>{toggled ? 'On' : 'Off'}</button>
+    )
+}
+
+export default TestDemo;

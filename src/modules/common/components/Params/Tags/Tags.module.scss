@@ -1,0 +1,8 @@
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    
+    .tag {
+        margin: 0 3px;
+    }
+}

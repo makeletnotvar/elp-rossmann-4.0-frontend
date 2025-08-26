@@ -1,0 +1,13 @@
+.autocomplete {
+	height: 32px;
+
+	> div {
+		> div {
+			padding: 4px !important;
+
+			> input {
+				font-size: 13px !important;
+			}
+		}
+	}
+}

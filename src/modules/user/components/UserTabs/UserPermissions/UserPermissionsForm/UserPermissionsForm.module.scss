@@ -1,0 +1,23 @@
+@import "styles/colors.module.scss";
+
+.container {
+    font-size: 0.9em;
+    padding: 8px;
+
+    .params {
+        .permissions {
+            margin-left: 8px;
+            min-width: 200px;
+        }
+        
+        input {
+            min-width: 300px;
+        }
+    }
+
+    .addButton {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+    }
+}

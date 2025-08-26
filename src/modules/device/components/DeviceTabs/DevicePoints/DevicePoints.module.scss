@@ -1,0 +1,118 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	gap: 5px;
+	height: -webkit-fill-available;
+
+	@include lg {
+		flex-direction: row;
+	}
+}
+
+.listContainer {
+	flex-basis: 50%;
+	flex-shrink: 1;
+	flex-grow: 1;
+	box-sizing: border-box;
+	@extend .scrollbar;
+
+	@include lg {
+		flex-direction: row;
+		overflow: auto;
+	}
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		padding: 8px;
+
+		.addButton,
+		.label {
+			align-self: center;
+		}
+	}
+
+	.wrapper {
+		overflow: auto;
+		height: calc(100% - 52px);
+		max-height: calc(100% - 52px);
+		@extend .scrollbar;
+	}
+
+	.table {
+		th {
+			background: #eee;
+			font-size: 9pt;
+			padding: 12px 3px;
+			position: sticky;
+			top: 0;
+			z-index: 9;
+		}
+
+		td {
+			font-size: 9pt;
+			padding: 3px;
+
+			&.min {
+				max-width: 24px !important;
+				width: 24px !important;
+			}
+		}
+
+		tr {
+			&.isSelected {
+				td {
+					background: #ffc168 !important;
+				}
+			}
+			&.inactive {
+				td {
+					background: #ccc !important;
+				}
+			}
+		}
+
+		tr {
+			th:last-child {
+				position: sticky !important;
+				right: 0 !important;
+				background-color: #eee !important;
+			}
+		}
+
+		tr {
+			td:last-child {
+				position: sticky !important;
+				right: 0 !important;
+				background-color: #eee !important;
+			}
+		}
+	}
+
+	.actions {
+		opacity: 0.5;
+		.viewIcon {
+			font-size: 18px;
+			fill: #000;
+		}
+	}
+}
+
+.isSelected {
+	background: #ffc168 !important;
+}
+
+.addButton {
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	box-shadow: none;
+
+	@include md {
+		margin-right: 0px;
+	}
+}

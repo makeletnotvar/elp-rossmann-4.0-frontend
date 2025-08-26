@@ -1,0 +1,79 @@
+@import 'styles/scrollbar.module.scss';
+
+.container {
+	padding: 10px 20px 10px 20px;
+	width: calc(100% - 40px);
+	height: calc(100% - 74px);
+	display: flex;
+	flex-direction: column;
+	font-size: 1em;
+	background-color: #f5f5f5;
+
+	.params {
+		margin-top: 0.5em;
+		p {
+			margin: 0;
+			font-size: 0.9em;
+			span {
+				color: #333;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.title {
+		margin: 12px 0px 12px 0px;
+	}
+
+	.system {
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.info {
+		color: #363636;
+	}
+
+	.footer {
+		display: flex;
+		align-items: center;
+		margin: 12px 0px 12px 0px;
+		gap: 8px;
+		justify-content: flex-end;
+
+		.logo {
+			height: 20px;
+		}
+
+		.year {
+			display: flex;
+			align-self: center;
+			margin: 8px 0 0 0;
+		}
+	}
+
+	.changelog {
+		height: calc(100% - 200px);
+		min-height: calc(100% - 200px);
+		max-height: calc(100% - 200px);
+		margin-top: 1em;
+
+		h2 {
+			font-weight: 500;
+			font-size: 1.2em;
+			margin-bottom: 0.25em;
+		}
+	}
+
+	.markdown {
+		height: calc(100% - 55px);
+		min-height: calc(100% - 55px);
+		max-height: calc(100% - 55px);
+		font-family: 'Courier New', Courier, monospace;
+		background: #f5f5f5;
+		font-size: 0.9em;
+		padding: 0.5em 0.5em;
+		overflow: auto;
+		@extend .scrollbar;
+	}
+}

@@ -1,0 +1,38 @@
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#fff, 0.95);
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10;
+
+    .header {
+        display: flex;
+        flex-flow: row nowrap;
+        > * {
+            align-self: center;
+        }
+
+        .closeButton {
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+        .links {
+            margin-left: 20px;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .params {
+            width: 33%;
+            flex-flow: column wrap;
+        }
+    }
+}

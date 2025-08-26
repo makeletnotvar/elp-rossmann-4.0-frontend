@@ -1,0 +1,61 @@
+@import 'styles/scrollbar.module.scss';
+
+.dialog {
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 5px;
+		@extend .scrollbar;
+		.group {
+			padding: 2px;
+			margin-bottom: 0;
+			box-shadow: none;
+
+			.summary {
+				min-height: 18px;
+				max-height: 18px;
+				> div {
+					margin: 0px;
+				}
+			}
+
+			.subGroup {
+				padding: 5px;
+				border-bottom: 1px solid #ddd;
+			}
+
+			.details {
+				display: flex;
+				flex-flow: column;
+
+				> .filterContainer {
+					margin-bottom: 10px;
+
+					> .filterInput {
+						width: 280px;
+						margin-left: auto;
+					}
+				}
+
+				.params {
+					display: flex;
+					flex-flow: row wrap;
+					flex-flow: column;
+
+					.param {
+						flex-basis: 300px;
+
+						span {
+							font-size: 0.8em !important;
+						}
+
+						&.hidden {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

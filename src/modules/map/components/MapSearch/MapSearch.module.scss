@@ -1,0 +1,38 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	top: 54px;
+	background: rgba(0, 0, 0, 0);
+	right: 56px;
+	z-index: 1000;
+	flex-flow: column nowrap;
+	user-select: none;
+	border-radius: 0 !important;
+
+	.titleWrapper {
+		border-bottom: 1px solid #aaa;
+		background: #eee;
+
+		.title {
+			font-weight: 400;
+			font-size: 9pt;
+			color: #888;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 5px;
+	}
+
+	.item {
+		background: #fff;
+	}
+}

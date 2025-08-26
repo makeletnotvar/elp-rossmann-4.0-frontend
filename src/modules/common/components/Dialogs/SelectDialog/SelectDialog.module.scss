@@ -1,0 +1,31 @@
+@import 'styles/rwd.module.scss';
+
+.dialog {
+	& > div:nth-child(3) > div {
+		overflow-y: visible !important;
+	}
+
+	.title {
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+
+	.content {
+		min-width: 300px;
+		min-height: 50px;
+		position: relative;
+		overflow: visible;
+		z-index: 9998 !important;
+		padding-right: 12px;
+		padding-left: 12px;
+
+		@include md {
+			min-width: 475px;
+		}
+
+		.select {
+			width: calc(100% - 24px);
+			position: absolute !important;
+		}
+	}
+}

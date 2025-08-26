@@ -1,0 +1,23 @@
+$fontSize-extraTiny: 0.625rem; // 10px
+$fontSize-tiny: 0.6875rem; // 11px
+$fontSize-extraSmall: 0.75rem; // 12px
+$fontSize-small: 0.875rem; // 14px
+$fontSize-medium: 1rem; // 16px
+$fontSize-large: 1.125rem; // 18px
+$fontSize-extraLarge: 1.25rem; // 20px
+$fontSize-displaySmall: 1.5rem; // 24px
+$fontSize-displayMedium: 2rem; // 32px
+$fontSize-displayLarge: 3rem; // 48px
+
+:export {
+	tiny: $fontSize-tiny;
+	extraTiny: $fontSize-extraTiny;
+	extraSmall: $fontSize-extraSmall;
+	small: $fontSize-small;
+	medium: $fontSize-medium;
+	large: $fontSize-large;
+	extraLarge: $fontSize-extraLarge;
+	displaySmall: $fontSize-displaySmall;
+	displayMedium: $fontSize-displayMedium;
+	displayLarge: $fontSize-displayLarge;
+}

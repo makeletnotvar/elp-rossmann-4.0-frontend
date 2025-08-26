@@ -1,0 +1,61 @@
+import * as React from 'react';
+import { shallow } from 'enzyme';
+import TestDemo from 'modules/common/components/Demo/TestDemo/TestDemo';
+
+describe('general', () => {
+    const wrapper = shallow(<TestDemo />);
+
+    it('should render button', () => {
+        expect(wrapper.find('button').length).toEqual(1);
+    });
+
+    it('should render button', () => {
+        expect(wrapper.find('button').text()).toEqual('Off');
+        expect(wrapper.find('button').text()).not.toEqual('On');
+    });
+});
+
+describe('initial state', () => {
+    const wrapper = shallow(<TestDemo initial={true}/>);
+
+    it('should render correct label', () => {
+        expect(wrapper.find('button').text()).toEqual('On');
+        expect(wrapper.find('button').text()).not.toEqual('Off');
+    });
+});
+
+describe('click action', () => {
+    const wrapper = shallow(<TestDemo/>);
+    wrapper.find('button').simulate('click');
+
+    it('should toggle on click', async (done) => {
+        expect(wrapper.find('button').text()).toEqual('On');
+        done();
+    });
+});
+
+
+describe('some test with initial state', () => {
+    const mockedClick = jest.fn();
+    const wrapper = shallow(<TestDemo onClick={mockedClick}/>);
+    wrapper.find('button').simulate('click');
+
+    it('should run action on click', async (done) => {
+        expect(wrapper.find('button').text()).toEqual('On');
+        expect(mockedClick.mock.calls.length).toEqual(1);
+        done();
+    });
+});
+
+describe('some test with initial state', () => {
+    const mockedClick = jest.fn();
+    const wrapper = shallow(<TestDemo onClick={mockedClick}/>);
+    wrapper.find('button').simulate('click');
+    wrapper.find('button').simulate('click');
+
+    it('should run action on click', async (done) => {
+        expect(wrapper.find('button').text()).toEqual('Off');
+        expect(mockedClick.mock.calls.length).toEqual(2);
+        done();
+    });
+});

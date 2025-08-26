@@ -1,0 +1,44 @@
+.empty {
+	width: 150px;
+	height: 150px;
+	background: #eee;
+	font-size: 12px;
+	text-align: center;
+	border: 3px double #ddd;
+	color: #aaa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.image {
+	-webkit-user-drag: none;
+}
+
+.containerRecTemp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.label {
+	background: #000;
+	color: #fff;
+	padding: 2px 12px;
+	white-space: nowrap;
+	font-size: 0.7em;
+}
+
+.value {
+	content: attr(data-value);
+	background: #000;
+	color: #fff;
+	padding: 2px 12px;
+	white-space: nowrap;
+	font-size: 0.7em;
+}

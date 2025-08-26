@@ -1,0 +1,48 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	display: flex;
+	gap: 5px;
+
+	.select {
+		width: 100px;
+		color: #333;
+
+		@include md {
+			width: 110px;
+		}
+		> div {
+			> div {
+				text-align: left;
+				padding: 8px 32px 8px 8px;
+			}
+		}
+	}
+
+	.select2 {
+		width: 100px;
+		color: #333;
+
+		@include md {
+			width: 110px;
+		}
+
+		> div {
+			> div {
+				padding: 8px 32px 8px 8px;
+			}
+		}
+	}
+}
+
+.radio {
+	flex-wrap: nowrap;
+	color: #333;
+	white-space: nowrap;
+	gap: 5px;
+
+	* {
+		font-size: 0.87rem;
+	}
+}

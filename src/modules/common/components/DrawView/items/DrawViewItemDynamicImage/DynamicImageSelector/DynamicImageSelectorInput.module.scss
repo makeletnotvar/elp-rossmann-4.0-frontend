@@ -1,0 +1,11 @@
+@import 'styles/colors.module.scss';
+
+.link {
+	text-decoration: underline;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.info {
+	color: $error-color;
+}

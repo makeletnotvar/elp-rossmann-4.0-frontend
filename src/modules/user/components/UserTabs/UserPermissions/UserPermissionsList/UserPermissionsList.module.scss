@@ -1,0 +1,45 @@
+@import 'styles/colors.module.scss';
+
+.table {
+	margin: 0;
+	max-width: 100%;
+	flex-shrink: 1;
+
+	td,
+	th {
+		background: #fff;
+		white-space: nowrap;
+		font-size: 0.75em;
+		padding: 4px 10px;
+	}
+
+	th {
+		background: #eee;
+		color: #000;
+		font-weight: 400;
+		font-size: 8pt;
+		padding: 12px 10px;
+		border-right: 1px solid #ddd !important;
+	}
+
+	td {
+		box-shadow: 0px -1px 0px 0px rgb(240, 240, 240);
+
+		&.actions {
+			max-width: 100px;
+			width: 100px;
+		}
+
+		&.permissions {
+			font-weight: 500;
+		}
+
+		&.name {
+			font-weight: 500;
+		}
+
+		a {
+			color: darken($primary-color, 10%);
+		}
+	}
+}

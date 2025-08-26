@@ -1,0 +1,54 @@
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+
+.container {
+	height: 100%;
+}
+
+.containerMenu {
+	height: 100%;
+
+	.main {
+		display: flex;
+		flex-flow: column nowrap;
+		padding-bottom: 40px;
+
+		@include md {
+			flex-flow: row nowrap;
+			width: 100%;
+			height: 100%;
+			padding-bottom: 0;
+		}
+
+		.menu {
+			flex-grow: 0;
+			background: #fff;
+			width: 100%;
+			height: 47px;
+			border-right: 1px dotted #eee;
+
+			@include md {
+				width: 50px;
+				height: 100%;
+			}
+		}
+
+		.content {
+			width: 100%;
+			box-sizing: border-box;
+			height: calc(100% - 130px);
+			overflow-y: auto;
+			background: #fff;
+
+			@extend .scrollbar;
+
+			@include md {
+				height: calc(100% - 102px);
+			}
+		}
+	}
+}
+
+.error {
+	background: #666 !important;
+}

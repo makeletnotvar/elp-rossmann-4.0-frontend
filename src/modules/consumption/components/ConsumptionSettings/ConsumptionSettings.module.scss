@@ -1,0 +1,39 @@
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 300px;
+	min-width: 300px;
+	background: #fefefe;
+	transition: all 0.3s ease-in-out;
+	border-right: 1px solid #eee;
+	padding: 10px;
+	overflow: hidden;
+
+	&.extended {
+		width: 0%;
+		min-width: 34px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 300px;
+	height: 100%;
+	margin: auto;
+
+	&.extended {
+		display: none;
+		width: 0px;
+	}
+
+	h3 {
+		font-size: 1.25em;
+		font-weight: 500;
+	}
+
+	> * {
+		margin: 10px;
+	}
+}

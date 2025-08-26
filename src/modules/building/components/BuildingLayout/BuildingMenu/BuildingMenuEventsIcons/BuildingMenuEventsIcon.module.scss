@@ -1,0 +1,43 @@
+@import 'styles/colors.module.scss';
+
+.icon {
+	&.none {
+		svg {
+			fill: rgba($event-none-color, 1);
+		}
+	}
+
+	&.urgent {
+		svg {
+			fill: rgba($event-urgent-color, 1);
+		}
+	}
+
+	&.information {
+		svg {
+			fill: rgba($event-information-color, 1);
+		}
+	}
+
+	&.critical {
+		svg {
+			fill: rgba($event-critical-color, 1);
+		}
+	}
+
+	&.lifesafety {
+		svg {
+			fill: rgba($event-life-safety-color, 1);
+		}
+	}
+}
+
+@keyframes alarmAnimate {
+	0%,
+	100% {
+		transform: scale(0.9);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+}

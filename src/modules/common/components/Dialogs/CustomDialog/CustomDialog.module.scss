@@ -1,0 +1,29 @@
+.dialog {
+	.title {
+		padding: 10px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		background: #fff;
+		color: #333;
+		font-weight: 400;
+		font-size: 1.25em;
+
+		> * {
+			align-self: center;
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	.content {
+		height: 500px;
+	}
+
+	.actions {
+		padding: 0px 24px 14px 22px;
+	}
+}

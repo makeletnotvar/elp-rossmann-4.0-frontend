@@ -1,0 +1,42 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+$table-height: 100%;
+
+.container {
+	height: 100%;
+}
+
+.wrapper {
+	height: calc(100% - 60px) !important;
+	max-height: calc(100% - 60px) !important;
+}
+
+.remote {
+	margin-right: 10px;
+}
+
+.type {
+	max-width: 30px;
+	width: 30px;
+}
+
+.name {
+	width: 50%;
+}
+
+.level {
+	max-width: 50px;
+	width: 50px;
+	text-align: center;
+}
+
+.status {
+	max-width: 150px;
+	width: 150px;
+}
+
+.active {
+	max-width: 80px;
+	width: 80px;
+}

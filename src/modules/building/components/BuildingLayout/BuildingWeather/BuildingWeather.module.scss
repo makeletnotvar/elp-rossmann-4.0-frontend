@@ -1,0 +1,30 @@
+.dialogTitle {
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background: #fff;
+	color: #333;
+	font-weight: 400;
+	font-size: 1.25em;
+
+	> * {
+		align-self: center;
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.button {
+	background-color: #dfdfdf;
+	min-width: 75px;
+	max-width: 75px;
+	border-radius: 8px;
+}
+
+.button:hover {
+	background-color: #e4e4e4;
+}

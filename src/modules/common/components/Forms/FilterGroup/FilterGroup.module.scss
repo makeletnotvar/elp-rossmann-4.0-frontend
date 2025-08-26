@@ -1,0 +1,32 @@
+.group {
+    width: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+
+    .label {
+        align-self: center;
+        text-align: left;
+        font-size: 0.8em;
+    }
+
+    .inputs {
+        width: 50%;
+        text-align: left;
+
+
+    }
+
+    &.inactive {
+        opacity: 0.8;
+        background: #eee;
+        color: #aaa;
+    }
+}
+
+.label {
+    font-size: 0.8em !important;
+}

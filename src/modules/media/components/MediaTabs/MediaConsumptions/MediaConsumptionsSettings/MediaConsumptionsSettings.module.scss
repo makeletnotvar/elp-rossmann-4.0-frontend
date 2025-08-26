@@ -1,0 +1,51 @@
+@import 'styles/rwd.module.scss';
+
+.appBar {
+	background: #ffffff !important;
+	min-height: 57px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+
+	@include xl {
+		min-height: 57px;
+		max-height: 57px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	min-height: 57px;
+	gap: 0.75rem;
+	color: #000;
+
+	@include xl {
+		flex-flow: row nowrap;
+		min-height: 57px;
+		max-height: 57px;
+	}
+}
+
+.linksContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+
+	.linkItem {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+}
+
+.selectContainer {
+	min-width: 200px;
+}
+
+.submit {
+	margin-left: auto;
+}

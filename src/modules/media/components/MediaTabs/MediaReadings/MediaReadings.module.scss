@@ -1,0 +1,28 @@
+@import 'styles/rwd.module.scss';
+@import 'styles/colors.module.scss';
+
+.appBar {
+	background: #dfdfdf !important;
+}
+
+.tabs {
+	min-height: 46px;
+	max-height: 46px;
+}
+
+.tab {
+	color: $dark-color;
+	min-height: 46px;
+	max-height: 46px;
+	font-size: 0.625rem;
+	text-transform: none;
+
+	@include md {
+		font-size: 0.688rem;
+	}
+}
+
+.activeTab {
+	color: $dark-color;
+	background-color: #ffffff;
+}

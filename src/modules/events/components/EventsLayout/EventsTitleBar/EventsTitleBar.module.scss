@@ -1,0 +1,17 @@
+.search {
+    display: flex;
+    align-self: center;
+    width: 300px;
+    margin-right: 30px;
+    
+    input {
+        padding: 0 30px;
+        font-size: 1em;
+    }
+
+    .iconButton {
+        svg {
+            filL: red;
+        }
+    }
+}

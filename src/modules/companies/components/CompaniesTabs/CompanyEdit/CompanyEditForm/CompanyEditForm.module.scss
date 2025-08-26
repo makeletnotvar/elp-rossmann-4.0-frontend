@@ -1,0 +1,24 @@
+.container {
+	padding: 10px;
+}
+
+.params {
+	> div {
+		> div,
+		> label {
+			margin: 0px;
+		}
+	}
+}
+
+.actions {
+	margin: 20px 0;
+	text-align: center;
+	> * {
+		margin: 0 5px;
+	}
+
+	.deleteButton {
+		color: red;
+	}
+}

@@ -1,0 +1,54 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.dialog {
+	user-select: none;
+
+	.content {
+		min-width: 0px;
+		padding-top: 0;
+		display: flex;
+		flex-direction: column;
+
+		@include xl {
+			min-width: 1000px;
+			flex-direction: row;
+		}
+
+		@extend .scrollbar;
+	}
+}
+
+.params {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+
+	@include md {
+		max-width: 100%;
+	}
+
+	> div:nth-child(2) {
+		> div {
+			min-width: 100%;
+
+			@include xl {
+				min-width: 0%;
+			}
+		}
+	}
+
+	.formControl {
+		span:first-child {
+			padding: 4px !important;
+		}
+
+		span:nth-child(2) {
+			font-size: 0.9rem;
+		}
+	}
+
+	.divider {
+		flex-basis: 100%;
+	}
+}

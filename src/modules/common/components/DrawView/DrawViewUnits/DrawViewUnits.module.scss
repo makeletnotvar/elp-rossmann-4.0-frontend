@@ -1,0 +1,48 @@
+@import 'styles/colors.module.scss';
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.title {
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background: #fff;
+	color: #333;
+	font-weight: 400;
+	font-size: 1.25em;
+
+	> * {
+		align-self: center;
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.closeButton {
+		margin-left: auto;
+		align-self: center;
+
+		svg {
+			fill: #333;
+		}
+	}
+}
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	user-select: none;
+	height: 750px;
+	gap: 6px;
+	background-color: #fefefe;
+
+	@extend .scrollbar;
+
+	@include md {
+		flex-flow: row nowrap;
+		overflow: hidden;
+	}
+}

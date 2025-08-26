@@ -1,0 +1,44 @@
+@import 'styles/rwd.module.scss';
+
+.chartContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: calc(100% - 85px);
+    overflow: auto;
+
+    @include md {
+        overflow: hidden;
+    }
+
+    &.hiddenOverflow {
+        overflow: hidden;
+    }
+
+    .title {
+        margin: 5px;
+        font-weight: 500;
+    }
+
+    .wrapper {
+        margin-top: 10px;
+        width: 100%;
+        height: 620px;
+        box-sizing: border-box;
+
+        @include md {
+            height: 750px;
+        }
+    }
+
+    .footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin-left: -21px;
+        padding: 10px;
+        background-color: #fff;
+    }
+}

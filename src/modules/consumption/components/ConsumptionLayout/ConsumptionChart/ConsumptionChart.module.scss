@@ -1,0 +1,11 @@
+@import 'styles/rwd.module.scss';
+
+.chart {
+  svg {
+    height: calc(100% - 40px);
+
+    @include md {
+      height: 100%;
+    }
+  }
+}

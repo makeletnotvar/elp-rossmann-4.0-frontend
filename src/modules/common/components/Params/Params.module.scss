@@ -1,0 +1,284 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+.params {
+	user-select: none;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+	margin-top: 10px;
+
+	.params {
+		width: 100%;
+	}
+
+	&.collapsed {
+		.wrapper {
+			max-height: 0 !important;
+			min-height: 0 !important;
+			height: 0 !important;
+			overflow-y: hidden;
+			box-sizing: border-box;
+			padding: 0;
+		}
+
+		.header {
+			margin-bottom: 0px !important;
+		}
+	}
+
+	&.collapseable {
+		.header {
+			cursor: pointer;
+			&:hover > .title {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&.summaryAlarm {
+		.header {
+			background: #ff4c4c77;
+			margin-bottom: 10px;
+		}
+	}
+
+	&.communicationAlarm {
+		.header {
+			background: #6a737b77;
+			margin-bottom: 10px;
+		}
+	}
+
+	.header {
+		display: flex;
+		background: #ddd;
+		font-size: 0.938rem;
+		height: 28px;
+
+		@include md {
+			background: transparent;
+			padding: 1px 1px;
+
+			.title {
+				color: #333;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		}
+
+		> * {
+			align-self: center;
+
+			&.title {
+				color: #333;
+				font-size: 0.75em;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		height: auto;
+		gap: 0px;
+		padding-left: 10px;
+		gap: 10px;
+
+		.param {
+			display: flex;
+			flex-basis: 100%;
+			margin: 0px 1px 1px 0;
+			padding: 12px 12px;
+			flex-grow: 1;
+			gap: 12px;
+
+			@include md {
+				margin: 0px 1px 1px 0;
+				padding: 8px 12px;
+				flex-basis: 244px;
+				max-width: 244px;
+				overflow: hidden;
+
+				&.longText {
+					max-width: 512px;
+				}
+			}
+
+			> .iconWrapper {
+				display: flex;
+				align-self: center;
+				svg {
+					color: #222;
+					width: 18px;
+					height: 18px;
+				}
+
+				&.static {
+					svg {
+						fill: #222;
+						color: #222;
+					}
+				}
+			}
+
+			> .labelsWrapper {
+				display: flex;
+				flex-flow: column wrap;
+				flex-shrink: 1;
+				width: 100%;
+				max-width: 100%;
+
+				> .label {
+					font-size: 0.625rem;
+					font-weight: 600;
+					color: #444444;
+					text-transform: uppercase;
+					white-space: nowrap;
+					overflow: hidden;
+					max-width: 200px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+
+					> svg {
+						width: 12px;
+						height: 12px;
+					}
+				}
+
+				> .value {
+					display: flex;
+					align-items: center;
+					color: #222;
+					font-size: 0.875rem;
+					font-weight: 400;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					max-height: 25px;
+					min-height: 25px;
+
+					@include md {
+						font-size: 1rem;
+					}
+				}
+
+				> .longText {
+					align-items: center;
+					display: flex;
+					flex-flow: row nowrap;
+					color: #222;
+					font-size: 1rem;
+					font-weight: 400;
+					white-space: pre-line;
+					overflow: hidden;
+					max-width: 555px;
+				}
+			}
+		}
+
+		.param2 {
+			display: flex;
+			margin: 0px 1px 1px 0;
+			padding: 4px 12px;
+			min-width: 150px;
+			gap: 12px;
+
+			@include md {
+				margin: 0px 1px 1px 0;
+				padding: 8px 12px;
+				overflow: hidden;
+
+				&.longText {
+					max-width: 512px;
+				}
+			}
+
+			> .iconWrapper {
+				display: flex;
+				align-self: center;
+				svg {
+					color: #222;
+					width: 18px;
+					height: 18px;
+				}
+
+				&.static {
+					svg {
+						fill: #222;
+						color: #222;
+					}
+				}
+			}
+
+			> .labelsWrapper {
+				display: flex;
+				flex-flow: column wrap;
+				flex-shrink: 1;
+				width: 100%;
+				max-width: 100%;
+
+				> .label {
+					font-size: 0.625rem;
+					font-weight: 600;
+					color: #444444;
+					text-transform: uppercase;
+					white-space: nowrap;
+					overflow: hidden;
+					max-width: 180px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+
+					> svg {
+						width: 12px;
+						height: 12px;
+					}
+				}
+
+				> .value {
+					display: flex;
+					align-items: center;
+					color: #222;
+					font-size: 0.875rem;
+					font-weight: 400;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					max-height: 25px;
+					min-height: 25px;
+
+					@include md {
+						font-size: 1rem;
+					}
+				}
+
+				> .longText {
+					align-items: center;
+					display: flex;
+					flex-flow: row nowrap;
+					color: #222;
+					font-size: 1rem;
+					font-weight: 400;
+					white-space: pre-line;
+					overflow: hidden;
+					max-width: 555px;
+				}
+			}
+		}
+	}
+}
+
+.params .params:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.params .params {
+	margin-top: 0;
+}
+
+.preLine {
+	white-space: pre-line;
+}

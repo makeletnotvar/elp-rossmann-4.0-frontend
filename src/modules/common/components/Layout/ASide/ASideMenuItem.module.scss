@@ -1,0 +1,50 @@
+@import 'styles/colors.module.scss';
+
+.listItem {
+	gap: 12px;
+	min-width: 35px !important;
+
+	> span {
+		display: flex;
+	}
+}
+
+.item {
+	width: -webkit-fill-available !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
+	height: 47px !important;
+	transition: none !important;
+
+	svg * {
+		color: #303030;
+		fill: #303030;
+	}
+
+	&.isDarkMode {
+		svg * {
+			color: #fff;
+			fill: #fff;
+		}
+	}
+}
+
+.gutters {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.active {
+	background: $primary-color !important;
+	opacity: 1 !important;
+	color: #fff !important;
+
+	svg * {
+		color: #fff;
+		fill: #fff;
+	}
+}
+
+.activeSubmenu {
+	background: lighten($primary-color, 45%) !important;
+}

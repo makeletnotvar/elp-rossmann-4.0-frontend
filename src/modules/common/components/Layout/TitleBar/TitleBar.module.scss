@@ -1,0 +1,76 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+.titleBar {
+	background: $title-bar-bg-color !important;
+	display: flex;
+	flex-flow: row nowrap;
+	max-height: 47px;
+	align-items: center;
+
+	.label {
+		font-weight: 500;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: max-content;
+		font-size: 0.9rem;
+		color: #303030;
+	}
+
+	.button {
+		display: none;
+		@include md {
+			display: block;
+		}
+
+		.icon {
+			color: #303030;
+			font-size: 22px;
+		}
+	}
+
+	.dot {
+		color: #303030;
+		font-size: 1.2rem;
+		margin-right: 12px;
+		display: none;
+		@include md {
+			display: block;
+		}
+	}
+
+	.actions {
+		display: flex;
+		justify-content: flex-end;
+		flex-flow: row nowrap;
+		width: 50%;
+		margin-left: auto;
+		align-self: center;
+		text-align: right;
+		align-items: center;
+		padding: 0;
+		padding: 0px 14px 0px 14px;
+	}
+}
+
+.titleBarCustom {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.toolbar {
+	padding-left: 14px !important;
+	padding-right: 14px !important;
+	min-height: 51px !important;
+}
+
+.miniTitleBar {
+	background: #eee !important;
+	display: flex;
+	flex-flow: row nowrap;
+	height: 25px;
+	max-height: 25px;
+	min-height: 25px;
+	padding: 0;
+}

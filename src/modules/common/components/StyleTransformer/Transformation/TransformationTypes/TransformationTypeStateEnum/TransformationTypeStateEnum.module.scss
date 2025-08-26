@@ -1,0 +1,42 @@
+.container {
+	height: calc(100% - 27px);
+
+	.addTransform {
+		display: flex;
+		position: sticky;
+		align-items: center;
+		top: 0;
+		gap: 10px;
+		background-color: #fff;
+		z-index: 1337;
+		padding: 5px;
+		padding-left: 0px;
+	}
+
+	.stateContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+
+		.state {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+	}
+
+	.stateSelector {
+		width: 300px !important;
+		height: 34px;
+		> div {
+			min-height: 34px !important;
+
+			> div:nth-child(2) {
+				> div {
+					padding: 5px;
+				}
+			}
+		}
+	}
+}

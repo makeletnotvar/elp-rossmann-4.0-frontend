@@ -1,0 +1,94 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+@import 'styles/fontSizes.module.scss';
+
+.instanceHeader {
+	display: flex;
+	align-items: center;
+	color: #444444;
+	letter-spacing: 0.5px;
+	margin: 0;
+	padding: 8px 4px 4px 1px;
+}
+
+.instanceContainer {
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.instanceParam {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0px 4px 0 0px;
+	padding: 4px 0px;
+	flex-basis: 125px;
+	max-width: 250px;
+	overflow: hidden;
+	gap: 3px;
+
+	@include md {
+		flex-basis: 250px;
+	}
+
+	&.fullWidth {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.title {
+		display: inline-block;
+		font-size: $fontSize-extraTiny;
+		font-weight: 600;
+		color: #444444;
+		text-transform: uppercase;
+		white-space: nowrap;
+		overflow: hidden;
+		max-width: 120px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+
+		@include md {
+			max-width: 250px;
+		}
+	}
+
+	.value {
+		display: inline-block;
+		align-items: center;
+		color: #222;
+		font-size: $fontSize-small;
+		font-weight: 400;
+		white-space: nowrap;
+		overflow: hidden;
+		max-width: 125px;
+		text-overflow: ellipsis;
+		max-height: 18px;
+		min-height: 18px;
+
+		@include md {
+			max-width: 250px;
+			font-size: $fontSize-large;
+			max-height: 25px;
+			min-height: 25px;
+		}
+
+		&.fullWidth {
+			max-width: 100%;
+		}
+	}
+
+	.link {
+		color: rgb(37, 92, 192);
+	}
+
+	.unitValue {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: $fontSize-extraSmall;
+		color: #9a9a9a;
+	}
+}

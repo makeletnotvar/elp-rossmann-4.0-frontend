@@ -1,0 +1,107 @@
+@import 'styles/colors.module.scss';
+@import 'styles/scrollbar.module.scss';
+
+.drawer {
+	> [role='document'] {
+		top: 65px;
+	}
+
+	.container {
+		width: 400px;
+		padding: 10px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #ddd;
+
+		.title {
+			font-size: 1em;
+			font-weight: 500;
+			display: flex;
+			justify-content: space-between;
+			padding: 5px;
+
+			> * {
+				align-self: center;
+			}
+			svg {
+				fill: $primary-color;
+			}
+		}
+	}
+}
+
+.listsWrapper {
+	max-height: 100%;
+	overflow-y: auto;
+	@extend .scrollbar-dark;
+
+	.listTitle {
+		font-size: 0.6em;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: #888;
+		padding: 2px 10px;
+	}
+
+	.list {
+		.item {
+			border-bottom: 1px solid #ddd;
+
+			&.read {
+				background: #eee;
+				opacity: 0.75;
+
+				.icon {
+					svg {
+						fill: #bbb;
+					}
+				}
+			}
+
+			.icon {
+				width: 40px;
+				min-width: 40px;
+				svg {
+					fill: $error-color;
+				}
+			}
+
+			.column {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+
+				> div {
+					margin: 0;
+				}
+
+				.name > span {
+					font-size: 10pt;
+					font-weight: 500;
+				}
+
+				.time > span {
+					font-size: 8pt;
+					font-weight: 300;
+				}
+			}
+
+			.readTime {
+				display: flex;
+				flex-flow: row nowrap;
+				margin-left: auto;
+
+				svg {
+					width: 12px;
+					height: 12px;
+					margin-left: 5px;
+				}
+
+				label {
+					font-size: 0.7em;
+					font-weight: 300;
+					color: #aaa;
+				}
+			}
+		}
+	}
+}

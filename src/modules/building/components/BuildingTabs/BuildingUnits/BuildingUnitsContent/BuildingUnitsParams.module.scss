@@ -1,0 +1,22 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	height: 100%;
+}
+
+.wrapper {
+	height: calc(100% - 46px) !important;
+	max-height: calc(100% - 46px) !important;
+	background: #fff !important;
+}
+
+.param {
+	font-weight: 500;
+	width: 300px;
+}
+
+.value {
+	font-weight: 400;
+	font-size: 0.8em !important;
+}

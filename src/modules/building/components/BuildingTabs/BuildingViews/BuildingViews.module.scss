@@ -1,0 +1,44 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+
+.actions {
+	opacity: 0.5;
+	.viewIcon {
+		font-size: 18px;
+		fill: #000;
+	}
+}
+
+.viewLink {
+	text-decoration: none;
+	font-weight: 500;
+	color: #555;
+	display: flex;
+
+	svg,
+	span {
+		align-self: center;
+	}
+
+	svg {
+		width: 18px;
+		height: 18px;
+		margin-right: 5px;
+		fill: $primary-color;
+	}
+}
+
+.addButtonContainer {
+	position: absolute;
+	text-align: right;
+	padding: 10px;
+	z-index: 10;
+	bottom: 0;
+	right: 0;
+}
+
+.wrapper {
+	height: 100% !important;
+	max-height: 100% !important;
+}

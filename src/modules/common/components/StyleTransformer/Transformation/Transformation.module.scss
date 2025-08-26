@@ -1,0 +1,18 @@
+.container {
+	width: 100%;
+	height: calc(100% - 10px);
+	max-height: calc(100% - 10px);
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	font-size: 13px !important;
+
+	.empty {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		color: #ddd;
+	}
+}

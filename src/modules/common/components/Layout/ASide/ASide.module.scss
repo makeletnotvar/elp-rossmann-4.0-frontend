@@ -1,0 +1,11 @@
+@import 'styles/scrollbar.module.scss';
+
+.drawerClose {
+	@extend .scrollbar;
+}
+
+.list {
+	overflow-y: auto;
+	overflow-x: hidden;
+	@extend .scrollbar;
+}

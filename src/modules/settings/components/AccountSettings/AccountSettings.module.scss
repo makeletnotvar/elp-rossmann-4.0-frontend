@@ -1,0 +1,31 @@
+@import 'styles/colors.module.scss';
+
+
+.account {
+    h3 {
+        font-weight: 200;
+    }
+
+    .form {
+        &>div {
+            padding: 10px;
+        }
+        
+
+        .actions {
+            padding: 20px 10px;
+        }
+
+        .text {
+            margin-top: 20px;
+        }
+    }
+
+    .success {
+        color: $success-color;
+    }
+
+    .failure {
+        color: $error-color;
+    }
+}

@@ -1,0 +1,28 @@
+@import 'styles/colors.module.scss';
+
+.communication {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: $success-color;
+	cursor: pointer;
+
+	&.hidden {
+		cursor: default;
+	}
+
+	&.fail {
+		background: $error-color;
+	}
+
+	svg {
+		width: 16px;
+		height: 16px;
+		fill: #fff;
+		padding: 2px;
+	}
+}

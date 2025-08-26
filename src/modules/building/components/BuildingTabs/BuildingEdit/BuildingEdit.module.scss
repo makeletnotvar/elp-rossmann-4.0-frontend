@@ -1,0 +1,105 @@
+@import 'styles/colors.module.scss';
+
+.params {
+	> div {
+		> div,
+		> label {
+			margin: 0px;
+		}
+	}
+}
+
+.selectContainer {
+	min-width: 200px;
+}
+
+.actions {
+	margin: 20px 0;
+	text-align: center;
+	> * {
+		margin: 0 5px;
+	}
+
+	.deleteButton {
+		color: red;
+	}
+}
+
+.installationCompany {
+	> div:nth-child(2) {
+		gap: 5px;
+		margin: 10px;
+	}
+}
+
+.installationCompanyLabel {
+	align-self: center;
+	font-weight: 500;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.installationCompanyEmptyLabel {
+	align-self: center;
+	color: #aaa;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.serviceCompany {
+	> div:nth-child(2) {
+		gap: 5px;
+		margin: 10px;
+	}
+}
+
+.serviceCompanyLabel {
+	align-self: center;
+	font-weight: 500;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.serviceCompanyEmptyLabel {
+	align-self: center;
+	color: #aaa;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.administrator {
+	> div:nth-child(2) {
+		gap: 5px;
+		margin: 10px;
+	}
+}
+
+.administratorLabel {
+	align-self: center;
+	font-weight: 500;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.administratorEmptyLabel {
+	align-self: center;
+	color: #aaa;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.deleteBuildingButton {
+	color: #fff;
+	background-color: #ff4c4c;
+}
+
+.deleteBuildingButton:hover {
+	color: #fff;
+	background-color: #9c3030;
+}

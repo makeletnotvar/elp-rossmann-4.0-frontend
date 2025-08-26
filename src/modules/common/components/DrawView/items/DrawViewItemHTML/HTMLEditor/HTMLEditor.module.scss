@@ -1,0 +1,60 @@
+@import 'styles/colors.module.scss';
+@import 'styles/scrollbar.module.scss';
+
+.link {
+	text-decoration: underline;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.dialog {
+	height: 100%;
+
+	.title {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+
+	.content {
+		height: 600px;
+		max-height: 1000px !important;
+		overflow: hidden;
+		&.minimized {
+			max-height: 0 !important;
+			display: none;
+		}
+
+		.wrapper {
+			display: flex;
+			flex-flow: row nowrap;
+			height: calc(100% - 60px);
+
+			.editorContainer {
+				width: 50%;
+				height: 100%;
+				border-right: 1px solid #ddd;
+				overflow-y: auto;
+				@extend .scrollbar;
+
+				.label {
+					display: block;
+					font-size: 0.8em;
+					opacity: 0.5;
+					padding: 6px;
+					text-align: right;
+				}
+
+				.textArea {
+					outline: none;
+				}
+			}
+
+			.previewContainer {
+				width: 50%;
+				max-width: 50%;
+				height: 100%;
+			}
+		}
+	}
+}

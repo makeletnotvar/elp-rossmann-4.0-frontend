@@ -1,0 +1,12 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+$table-height: calc(100% - 48px);
+
+.container {
+	height: 100%;
+}
+
+.remote {
+	margin-right: 10px;
+}

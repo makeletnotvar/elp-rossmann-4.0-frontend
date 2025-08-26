@@ -1,0 +1,27 @@
+@import 'styles/colors.module.scss';
+
+.level0 {
+	span {
+		background-color: rgba($event-none-color, 1) !important;
+	}
+}
+.level1 {
+	span {
+		background-color: rgba($event-information-color, 1) !important;
+	}
+}
+.level2 {
+	span {
+		background-color: rgba($event-urgent-color, 1) !important;
+	}
+}
+.level3 {
+	span {
+		background-color: rgba($event-critical-color, 1) !important;
+	}
+}
+.level4 {
+	span {
+		background-color: rgba($event-life-safety-color, 1) !important;
+	}
+}

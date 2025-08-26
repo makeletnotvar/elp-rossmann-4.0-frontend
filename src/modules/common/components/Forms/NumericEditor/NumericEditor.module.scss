@@ -1,0 +1,16 @@
+.row {
+	width: 100%;
+	margin: 10px 0;
+
+	> * {
+		margin-right: 10px;
+	}
+
+	.min,
+	.max,
+	.step,
+	.decimals,
+	.suffix {
+		width: 130px;
+	}
+}

@@ -1,0 +1,12 @@
+@import 'styles/rwd.module.scss';
+
+.editButton {
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	box-shadow: none;
+
+	@include md {
+		margin-right: 0px;
+	}
+}

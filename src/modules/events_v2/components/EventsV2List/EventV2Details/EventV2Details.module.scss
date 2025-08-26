@@ -1,0 +1,17 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+@import 'styles/spacings.module.scss';
+
+.tab {
+	> span {
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		gap: $spacing-extraSmall;
+
+		> svg {
+			margin: $spacing-none !important;
+		}
+	}
+}

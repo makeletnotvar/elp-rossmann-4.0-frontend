@@ -1,0 +1,53 @@
+@import 'styles/colors.module.scss';
+
+.colorSelect {
+	display: flex;
+
+	.colorInput {
+		display: none;
+	}
+
+	.colorInput + label {
+		display: block;
+		width: 60%;
+		font-size: 8pt;
+		font-weight: bold;
+		padding: 2px;
+	}
+
+	.alphaInput {
+		width: 40%;
+	}
+
+	a {
+		color: $primary-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+.textDecoration,
+.textPosition {
+	input[type='checkbox'],
+	input[type='radio'] {
+		display: none;
+
+		& + label {
+			opacity: 0.5;
+			cursor: pointer;
+
+			svg {
+				width: 16px;
+				height: 16px;
+				border: 1px solid #555;
+				margin: 1px;
+				border-radius: 2px;
+			}
+		}
+
+		&:checked + label {
+			opacity: 1;
+		}
+	}
+}

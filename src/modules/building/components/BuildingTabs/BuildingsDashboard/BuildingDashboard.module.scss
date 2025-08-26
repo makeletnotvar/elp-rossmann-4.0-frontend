@@ -1,0 +1,12 @@
+@import 'styles/colors.module.scss';
+
+.container {
+    user-select: none;
+    
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        background: #fff;
+        margin-bottom: 4px;
+    }
+}

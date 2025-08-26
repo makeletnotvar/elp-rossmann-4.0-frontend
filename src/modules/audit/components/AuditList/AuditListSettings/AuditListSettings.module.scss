@@ -1,0 +1,116 @@
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+@import 'styles/colors.module.scss';
+
+.appBar {
+	position: relative;
+	background: #ffffff !important;
+	min-height: 42px;
+	max-height: 42px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+	&.openAppBar {
+		height: 105px;
+		min-height: 105px;
+		max-height: 105px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	min-height: 50px;
+	gap: 0.75rem;
+	color: #000;
+
+	@include xl {
+		min-height: 50px;
+		max-height: 50px;
+	}
+}
+
+.linksContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+
+	.linkItem {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+}
+
+.selectContainer {
+	min-width: 200px;
+}
+
+.submit {
+	margin-left: auto;
+}
+
+.datepicker {
+	width: 140px;
+
+	&.openAppBar {
+		width: 140px;
+	}
+
+	@include lg {
+		&.openAppBar {
+			width: 140px;
+		}
+	}
+
+	> div {
+		margin-top: 8px;
+	}
+}
+
+.activeFiltersContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.activeFilters {
+	display: flex;
+	overflow: auto;
+	gap: 5px;
+	@extend .scrollbar;
+}
+
+.addIconFab {
+	align-self: flex-start;
+	width: 32px;
+	height: 32px;
+	min-width: 32px;
+	min-height: 32px;
+	box-shadow: none;
+	margin-left: 10px;
+	.addIcon {
+		path {
+			fill: #fff;
+		}
+	}
+}
+
+.chipTitle {
+	color: #a0a0a0;
+}
+
+.chip {
+	font-size: 12px;
+	background-color: #fff;
+}
+
+.chip:focus {
+	font-size: 12px;
+	background-color: #fff;
+	border: 1px solid $primary-color;
+}

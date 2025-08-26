@@ -1,0 +1,88 @@
+@import 'styles/scrollbar.module.scss';
+
+.logs {
+    max-height: 700px;
+    overflow-y: auto;
+
+    @extend .scrollbar;
+
+    .log {
+        font-family: 'Courier New', Courier, monospace;
+        padding: 2px;
+        padding-left: 9px;
+        font-weight: 200;
+        font-size: 10pt;
+        position: relative;
+
+        &:hover {
+            background: #eee;
+        }
+
+        .indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #ddd;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 2px;
+            transform: translateY(-50%);
+        }
+
+        &.error {
+            color: red !important;
+
+            .indicator {
+                background: red;
+            }
+        }
+        
+       
+        &.success {
+            .message {
+                color: green !important;
+            }
+            
+            .indicator {
+                background: green;
+            }
+        }
+
+        .source {
+            font-weight: bold;
+            margin: 0 5px;
+            color: #7d3f98;
+        }
+
+        .tags {
+            margin: 0 5px;
+        }
+
+        .message {
+            color: #00205b;
+        }
+
+        .time {
+            margin: 0 5px;
+            color: #aaa;
+        }
+    }
+
+    .more {
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 3px;
+    }
+}
+
+.container {
+    border: 1px solid #ddd;
+    height: auto;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.stats {
+    padding: 5px;
+}

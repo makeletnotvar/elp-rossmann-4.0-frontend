@@ -1,0 +1,46 @@
+.container {
+	padding: 10px;
+}
+
+.params {
+	> div {
+		> div,
+		> label {
+			margin: 0px;
+		}
+	}
+}
+
+.actions {
+	margin: 20px 0;
+	text-align: center;
+	> * {
+		margin: 0 5px;
+	}
+
+	.deleteButton {
+		color: red;
+	}
+}
+
+.company {
+	> div:nth-child(2) {
+		gap: 5px;
+	}
+}
+
+.companyLabel {
+	align-self: center;
+	font-weight: 500;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.companyEmptyLabel {
+	align-self: center;
+	color: #aaa;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	cursor: pointer;
+}

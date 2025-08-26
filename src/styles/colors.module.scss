@@ -1,0 +1,59 @@
+$text-color: #ffffff !default;
+$light-color: #f5fafa !default;
+
+$primary-color: #205de0;
+$secondary-color: #e0203f;
+$third-color: #007fff !default;
+$accent-color: #03dac6 !default;
+$dark-color: #141414;
+
+$white-color: #fff;
+
+$success-color: #009b00;
+$error-color: #ff4c4c;
+$warning-color: #ffb900;
+$cancel-color: #aaa;
+
+$plan-premium-color: #2dde98;
+$plan-free-color: #6a737b;
+
+// Header
+$header-bg-color: #222;
+$top-right-nav-link-color: $light-color;
+
+// Aside
+$aside-menu-bg-color: $primary-color;
+$aside-menu-active-bg-color: #eee;
+$aside-menu-hover-bg-color: darken($secondary-color, 5%);
+$aside-menu-active-icon-color: rgba($primary-color, 0.9);
+$aside-menu-button-bg-color: transparent;
+$aside-menu-button-border-color: rgba(#fff, 0.1);
+$aside-menu-button-hover-border-color: 1px solid rgba(#fff, 0.33);
+$aside-menu-button-hover-icon-color: #fff;
+
+// Title
+$title-bar-bg-color: #f5f5f5;
+$title-bar-color: #000;
+
+// Views
+$widget-top-bg-color: $secondary-color;
+$widget-border-color: rgba($secondary-color, 0.5);
+$widget-title-color: $light-color;
+
+$event-none-color: #b3b5b9;
+$event-information-color: #449afd;
+$event-urgent-color: #ffb900;
+$event-critical-color: #ff6319;
+$event-life-safety-color: #fd2626;
+
+$button-delete-color: #ff4c4c;
+
+// Points
+$point-numeric-color: #30c39e;
+$point-enum-color: #8e43e7;
+
+:export {
+	headerBackground: $header-bg-color;
+	primaryColor: $primary-color;
+	secondaryColor: $secondary-color;
+}

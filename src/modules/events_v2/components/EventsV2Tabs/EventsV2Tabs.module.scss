@@ -1,0 +1,39 @@
+@import 'styles/rwd.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/fontSizes.module.scss';
+@import 'styles/spacings.module.scss';
+
+.tabs {
+	padding: 5px 5px;
+	min-height: 35px;
+	max-height: 35px;
+}
+
+.tab {
+	color: $dark-color;
+	min-height: 35px;
+	max-height: 35px;
+	font-size: $fontSize-tiny;
+	text-transform: none;
+
+	@include md {
+		font-size: $fontSize-extraSmall;
+	}
+
+	> span {
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		gap: $spacing-extraSmall;
+
+		> svg {
+			font-size: $fontSize-small;
+			margin-bottom: 2px !important;
+		}
+	}
+}
+
+.activeTab {
+	color: $dark-color;
+	background-color: #fafafa;
+}

@@ -1,0 +1,83 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+$table-height: calc(100% - 69px);
+
+.container {
+	height: 100%;
+
+	.content {
+		height: calc(100% - 42px);
+		min-height: calc(100% - 42px);
+
+		&.openFilters {
+			height: calc(100% - 105px);
+			min-height: calc(100% - 105px);
+		}
+	}
+}
+
+.type {
+	height: 24px;
+}
+
+.typeContainer {
+	user-select: none;
+	gap: 5px;
+	display: flex;
+}
+
+.username {
+	width: 150px;
+	font-size: 0.75em;
+	font-weight: 500;
+}
+
+.typeIcon {
+	font-size: 1.25rem;
+	color: #aaa;
+}
+
+.titleBar {
+	border-bottom: none !important;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.link:hover {
+	cursor: pointer;
+
+	&.emptyBuilding {
+		cursor: default;
+	}
+}
+
+.menu {
+	padding: 0;
+	> div {
+		> ul {
+			padding: 0;
+		}
+	}
+	.menuItem {
+		display: flex;
+		gap: 7px;
+		padding: 0 7px 0 7px;
+		font-size: 12px;
+		height: 26px;
+		> * {
+			font-size: 15px;
+		}
+		> div {
+			> span {
+				font-size: 12px;
+			}
+		}
+
+		> svg:nth-child(2) {
+			margin-left: 53px;
+		}
+	}
+}

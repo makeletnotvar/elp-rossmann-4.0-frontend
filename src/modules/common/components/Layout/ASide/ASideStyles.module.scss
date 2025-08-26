@@ -1,0 +1,52 @@
+$drawerWidth: 210px;
+
+.hide {
+	display: none;
+}
+
+.drawer {
+	width: $drawerWidth;
+	flex-shrink: 0;
+	white-space: nowrap;
+	background-color: #ffffff !important;
+	border-right: none !important;
+	transition: width 0.1s ease !important;
+	overflow-x: hidden;
+}
+
+.drawerOpen {
+	background-color: #ffffff !important;
+	width: $drawerWidth;
+	border-right: 1px dotted #ddd !important;
+	z-index: 1199 !important;
+	transition: width 0.1s ease !important;
+	overflow-x: hidden;
+}
+
+.drawerClose {
+	z-index: 1 !important;
+	background-color: #ffffff !important;
+	border-right: none !important;
+	transition: width 0.1s ease !important;
+	overflow-x: hidden;
+	width: 0;
+
+	@media (min-width: 600px) {
+		width: 50px;
+	}
+}
+
+.toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 8px;
+	max-height: 54px;
+	min-height: 54px !important;
+	transition: margin-left 0.1s ease;
+}
+
+.content {
+	flex-grow: 1;
+	padding: 16px;
+}

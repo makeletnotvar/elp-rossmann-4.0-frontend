@@ -1,0 +1,13 @@
+[
+	{
+		"uuid": "xxxx-user-abcd-efgh-0dev",
+		"username": "dev@el-piast.com",
+		"type": "DEV",
+		"password": "dev",
+		"active": true,
+		"company": {
+			"uuid": "6ca727c5-48e8-47cc-8665-1e9fc2df3ebn",
+			"name": "FI - Wrocław"
+		}
+	}
+]

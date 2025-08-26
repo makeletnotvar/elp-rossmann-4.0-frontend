@@ -1,0 +1,17 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.chartsContainer {
+	@extend .scrollbar;
+	width: calc(100vw);
+	height: calc(100vh - 120px);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	@include rwd(598) {
+		width: calc(100vw - 52px);
+	}
+}

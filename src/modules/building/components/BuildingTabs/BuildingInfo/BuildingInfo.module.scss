@@ -1,0 +1,40 @@
+@import 'styles/rwd.module.scss';
+@import 'styles/scrollbar.module.scss';
+
+.container {
+    width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    font-size: 0.85em;
+    overflow-y: auto;
+    
+    @extend .scrollbar;    
+
+    @include md {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .params {
+        border-left-width: 2px;
+    }
+
+    .customParams {
+        border-left-width: 2px;
+
+        > div:nth-child(2) {
+            > div {
+                width: 50%!important;
+            }
+
+            > div:nth-child(3) {
+                width: 100%!important;
+            }
+        }
+    }
+
+    .actions {
+        padding: 20px 20px 40px;
+        text-align: center;
+    }
+}

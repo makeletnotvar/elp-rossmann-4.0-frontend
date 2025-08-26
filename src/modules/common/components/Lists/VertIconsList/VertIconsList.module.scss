@@ -1,0 +1,80 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+$size: 52px;
+
+.list {
+	width: $size;
+	padding: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	touch-action: auto !important;
+
+	* {
+		touch-action: auto !important;
+	}
+
+	.item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: -webkit-fill-available !important;
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+		height: 46.9px !important;
+		transition: none !important;
+		cursor: pointer;
+
+		.listItem {
+			min-width: 24px;
+
+			svg * {
+				color: #303030;
+				fill: #303030;
+			}
+
+			@include md {
+				min-width: 56px;
+			}
+		}
+
+		&.active {
+			background: $primary-color !important;
+
+			svg * {
+				color: #fff;
+				fill: #fff;
+			}
+		}
+	}
+}
+
+.none {
+	span {
+		background-color: rgba($event-none-color, 1) !important;
+	}
+}
+
+.urgent {
+	span {
+		background-color: rgba($event-urgent-color, 1);
+	}
+}
+
+.information {
+	span {
+		background-color: rgba($event-information-color, 1);
+	}
+}
+
+.critical {
+	span {
+		background-color: rgba($event-critical-color, 1);
+	}
+}
+
+.lifesafety {
+	span {
+		background-color: rgba($event-life-safety-color, 1);
+	}
+}

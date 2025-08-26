@@ -1,0 +1,165 @@
+@import 'styles/colors.module.scss';
+
+.priority {
+	font-size: 7pt !important;
+	font-weight: bold;
+	width: 24px !important;
+	border-radius: 50%;
+	height: 24px !important;
+	text-decoration: none !important;
+	background: rgba(#000, 0.5);
+	box-sizing: border-box;
+	color: #333 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+	position: relative;
+
+	svg {
+		width: 12px;
+		height: 12px;
+	}
+
+	&.none {
+		background: rgba($event-none-color, 1);
+	}
+
+	&.urgent {
+		background: rgba($event-urgent-color, 1);
+	}
+
+	&.information {
+		background: rgba($event-information-color, 1);
+	}
+
+	&.critical {
+		background: rgba($event-critical-color, 1);
+	}
+
+	&.lifesafety {
+		background: rgba($event-life-safety-color, 1);
+	}
+}
+
+.type {
+	svg {
+		width: 20px;
+		height: 20px;
+		fill: #555;
+	}
+}
+
+.status {
+	font-size: 0.8em !important;
+	opacity: 0.5 !important;
+
+	&.active {
+		background: $error-color !important;
+		color: #fff;
+		opacity: 1 !important;
+		text-transform: uppercase;
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.deviceLink {
+	text-decoration: underline;
+	color: $primary-color;
+}
+
+.acknowledge {
+	background: #000 $success-color;
+	font-size: 7pt;
+}
+
+.loading {
+	display: flex;
+	flex-flow: row nowrap;
+
+	> * {
+		align-self: center;
+	}
+
+	label {
+		font-size: 0.8em;
+		color: #555555;
+		margin-left: 10px;
+	}
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	padding: 3px;
+	border-radius: 50%;
+	transform: scale(0.75);
+	opacity: 0.75;
+	border: 1px solid #000;
+
+	&.isActive {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&.none {
+		background: rgba($event-none-color, 1);
+	}
+
+	&.urgent {
+		background: rgba($event-urgent-color, 1);
+	}
+
+	&.information {
+		background: rgba($event-information-color, 1);
+	}
+
+	&.critical {
+		background: rgba($event-critical-color, 1);
+	}
+
+	&.lifesafety {
+		background: rgba($event-life-safety-color, 1);
+	}
+}
+
+.badge {
+	span {
+		top: 5px;
+		max-height: 16px;
+		min-width: 16px;
+		font-size: 0.8em;
+	}
+	&.none {
+		span {
+			background: rgba($event-none-color, 1) !important;
+		}
+	}
+
+	&.urgent {
+		span {
+			background: rgba($event-urgent-color, 1);
+		}
+	}
+
+	&.information {
+		span {
+			background: rgba($event-information-color, 1);
+		}
+	}
+
+	&.critical {
+		span {
+			background: rgba($event-critical-color, 1);
+		}
+	}
+
+	&.lifesafety {
+		span {
+			background: rgba($event-life-safety-color, 1);
+		}
+	}
+}

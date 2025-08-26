@@ -1,0 +1,49 @@
+@import 'styles/colors.module.scss';
+
+.params {
+	flex-grow: 1;
+	box-sizing: border-box;
+	width: 50%;
+
+	.top {
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+		flex-flow: row wrap;
+		height: 87px;
+
+		.param {
+			flex-basis: 140px;
+			flex-grow: 1;
+			flex-shrink: 1;
+			width: auto;
+			text-align: center;
+			background: #ddd;
+			margin: 0 2px 4px;
+			text-align: center;
+			height: auto;
+			box-sizing: border-box;
+
+			.labels {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				height: 100%;
+
+				label {
+					font-size: 0.7em;
+					color: #888;
+					margin-bottom: 4px;
+					text-transform: uppercase;
+				}
+
+				div {
+					font-size: 1.2em;
+					color: #111;
+					font-weight: 400;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}

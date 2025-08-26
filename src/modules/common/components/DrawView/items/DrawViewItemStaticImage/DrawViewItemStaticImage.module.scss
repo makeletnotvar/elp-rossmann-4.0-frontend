@@ -1,0 +1,18 @@
+.empty {
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	background: #eee;
+	font-size: 12px;
+	text-align: center;
+	border: 3px double #ddd;
+	color: #aaa;
+}
+
+.hidden {
+	display: none;
+}
+
+.image {
+	-webkit-user-drag: none;
+}

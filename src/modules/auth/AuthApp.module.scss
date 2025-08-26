@@ -1,0 +1,12 @@
+@import 'styles/colors.module.scss';
+
+.container {
+	user-select: none;
+	height: 100%;
+	background: radial-gradient(circle, #68686823 10%, transparent 11%), radial-gradient(circle at bottom left, #68686823 5%, transparent 6%),
+		radial-gradient(circle at bottom right, #68686823 5%, transparent 6%), radial-gradient(circle at top left, #68686823 5%, transparent 6%),
+		radial-gradient(circle at top right, #68686823 5%, transparent 6%);
+	background-size: 1em 1em;
+	background-color: rgb(238, 242, 246);
+	opacity: 1;
+}

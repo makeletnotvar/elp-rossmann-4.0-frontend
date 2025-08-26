@@ -1,0 +1,189 @@
+.vhmiContainer {
+	height: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5rem;
+	border: 1px solid #f0f0f0;
+	padding: 4px;
+	box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+	&.isTextItem {
+		user-select: none;
+		cursor: pointer;
+	}
+
+	.vhmiIconContainer {
+		width: 100%;
+		height: 100%;
+		max-width: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.vhmiIcon {
+		width: 18px;
+		height: 18px;
+		color: #6b6b6b;
+
+		&.vhmiIconEdit {
+			color: #205de0;
+		}
+
+		&.isEnum {
+			color: #8e43e7;
+		}
+
+		&.isNumeric {
+			color: #30c39e;
+		}
+
+		&.isInfo {
+			color: #0db5e9;
+		}
+	}
+
+	.vhmiContent {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		gap: 0.1rem;
+
+		&.emptyChildren {
+			justify-content: center;
+		}
+
+		.vhmiName {
+			display: inline-block;
+			font-size: 0.625rem;
+			color: #9c9c9c;
+			white-space: nowrap;
+			font-weight: 500;
+			overflow: hidden;
+			max-width: 100%;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			text-transform: uppercase;
+
+			&.isTextItem {
+				font-size: 0.725rem;
+				color: #6b6b6b;
+			}
+		}
+
+		.vhmiValue {
+			color: #474747;
+			text-transform: uppercase;
+			font-size: 0.925rem;
+			margin: 0;
+			border-radius: 4px;
+		}
+
+		.vhmiInputContainer {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			height: 25px;
+		}
+
+		.vhmiRadioButton {
+			padding: 3px;
+			margin-right: 2px;
+			margin-left: 4px;
+		}
+
+		.vhmiEditingInputContainer {
+			display: flex;
+			align-items: center;
+			height: 25px;
+
+			.formControlLabel {
+				> span {
+					font-size: 0.925rem;
+				}
+			}
+
+			.vhmiConfirm {
+				margin-left: 2px;
+				svg {
+					fill: green;
+				}
+			}
+
+			.vhmiCancel {
+				margin-left: 4px;
+				margin-right: 2px;
+
+				svg {
+					fill: red;
+				}
+			}
+
+			.vhmiCustomInputContainer {
+				display: flex;
+				align-items: center;
+				gap: 0.25rem;
+				border-right: 1px solid #e2e2e2;
+
+				.vhmiCustomInput {
+					display: flex;
+					gap: 0.25rem;
+
+					> input {
+						height: 15px;
+					}
+
+					.vhmiUnit {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						min-width: 15px;
+						font-size: 14.5px;
+						border-radius: 0px;
+						color: #cccccc;
+						user-select: none;
+					}
+				}
+
+				.vhmiActionButton {
+					&.decrement {
+						margin-left: 2px;
+						margin-right: 4px;
+
+						svg {
+							fill: blue;
+						}
+					}
+
+					&.increment {
+						margin-right: 2px;
+
+						svg {
+							fill: red;
+						}
+					}
+				}
+			}
+		}
+
+		input {
+			padding: 5px 5px;
+			font-size: 14px;
+			border: 1px solid #cccccc;
+			border-radius: 0px;
+			color: #666666;
+			margin-right: 5px;
+			max-width: 150px;
+		}
+
+		input:focus {
+			outline: none;
+		}
+	}
+}
+
+.vhmiContainer:hover {
+	background-color: rgba(0, 0, 0, 0.03);
+}

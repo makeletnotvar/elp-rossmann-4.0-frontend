@@ -1,0 +1,37 @@
+@import 'styles/colors.module.scss';
+@import 'styles/fontSizes.module.scss';
+
+.status {
+	font-size: $fontSize-tiny !important;
+	opacity: 0.5 !important;
+
+	&.active {
+		background: $error-color !important;
+		color: #fff;
+		opacity: 1 !important;
+		text-transform: uppercase;
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.user {
+	background: #8f8f8f;
+	color: #fff;
+	font-size: $fontSize-small;
+}
+
+.comment {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.active {
+	max-width: 110px;
+}
+
+.buildingLink {
+	font-weight: 500 !important;
+}

@@ -1,0 +1,14 @@
+@import 'styles/rwd.module.scss';
+
+.autocomplete {
+	@include sm {
+		min-width: 480px;
+		max-width: 480px;
+	}
+}
+
+.textField {
+	> div {
+		padding-right: 6px !important;
+	}
+}

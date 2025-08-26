@@ -1,0 +1,126 @@
+@import 'styles/colors.module.scss';
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.text {
+		margin-left: 5px;
+		font-size: 13px;
+	}
+}
+
+.priority {
+	font-size: 7pt !important;
+	font-weight: bold;
+	width: 24px !important;
+	border-radius: 50%;
+	height: 24px !important;
+	text-decoration: none !important;
+	background: rgba(#000, 0.5);
+	box-sizing: border-box;
+	color: #333 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+	position: relative;
+
+	svg {
+		width: 12px;
+		height: 12px;
+	}
+
+	&.none {
+		background: rgba($event-none-color, 1);
+	}
+
+	&.urgent {
+		background: rgba($event-urgent-color, 1);
+	}
+
+	&.information {
+		background: rgba($event-information-color, 1);
+	}
+
+	&.critical {
+		background: rgba($event-critical-color, 1);
+	}
+
+	&.lifesafety {
+		background: rgba($event-life-safety-color, 1);
+	}
+}
+
+.icon {
+	color: #fff;
+	padding: 3px;
+	font-size: 0.9rem;
+	border-radius: 50%;
+	opacity: 0.5;
+
+	&.isActive {
+		opacity: 1;
+	}
+
+	&.none {
+		background: rgba($event-none-color, 1);
+	}
+
+	&.urgent {
+		background: rgba($event-urgent-color, 1);
+	}
+
+	&.information {
+		background: rgba($event-information-color, 1);
+	}
+
+	&.critical {
+		background: rgba($event-critical-color, 1);
+	}
+
+	&.lifesafety {
+		background: rgba($event-life-safety-color, 1);
+	}
+}
+
+.badge {
+	span {
+		top: 5px;
+		max-height: 16px;
+		min-width: 16px;
+		font-size: 0.8em;
+		border: 1px solid #646464;
+	}
+
+	&.none {
+		span {
+			background: rgba($event-none-color, 1) !important;
+		}
+	}
+
+	&.urgent {
+		span {
+			background: rgba($event-urgent-color, 1);
+		}
+	}
+
+	&.information {
+		span {
+			background: rgba($event-information-color, 1);
+		}
+	}
+
+	&.critical {
+		span {
+			background: rgba($event-critical-color, 1);
+		}
+	}
+
+	&.lifesafety {
+		span {
+			background: rgba($event-life-safety-color, 1);
+		}
+	}
+}

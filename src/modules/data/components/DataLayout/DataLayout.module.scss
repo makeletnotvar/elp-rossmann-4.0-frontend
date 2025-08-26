@@ -1,0 +1,62 @@
+@import 'styles/colors.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.drawer {
+	.title {
+		background: $primary-color;
+		font-size: 1em;
+		padding: 10px;
+		color: #eee;
+		text-transform: uppercase;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		> * {
+			align-self: center;
+		}
+	}
+	.drawerContent {
+		background: #eee;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		padding: 3px;
+
+		@include lg {
+			min-height: 45vh;
+			max-height: 50vh;
+			flex-direction: row;
+		}
+	}
+}
+
+.snackbar {
+	right: 18px;
+	bottom: 60px;
+
+	> * {
+		background: #fff;
+		color: #333;
+	}
+
+	svg {
+		animation: ani 1.25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+		transform: translateY(-3px);
+	}
+
+	z-index: 2;
+}
+
+@keyframes ani {
+	50% {
+		transform: translateY(3px);
+	}
+}

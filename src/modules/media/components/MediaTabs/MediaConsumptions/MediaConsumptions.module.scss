@@ -1,0 +1,22 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/rwd.module.scss';
+
+.container {
+	height: calc(100% - 60px);
+}
+
+.dataContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	height: calc(100% - 220px);
+	max-height: calc(100% - 220px);
+
+	@extend .scrollbar;
+
+	@include xl {
+		height: 100%;
+		max-height: 100%;
+	}
+}

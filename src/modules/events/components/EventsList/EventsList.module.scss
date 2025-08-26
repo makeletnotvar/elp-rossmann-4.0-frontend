@@ -1,0 +1,25 @@
+@import 'styles/scrollbar.module.scss';
+@import 'styles/colors.module.scss';
+
+.container {
+	height: 100%;
+}
+.name {
+	width: 50%;
+}
+
+.level {
+	width: 15px;
+	max-width: 15px;
+	text-align: center;
+}
+
+.status {
+	max-width: 150px;
+	width: 150px;
+}
+
+.active {
+	max-width: 80px;
+	width: 80px;
+}

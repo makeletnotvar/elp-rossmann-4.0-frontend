@@ -1,0 +1,87 @@
+.leaflet-tile-container {
+	filter: grayscale(45%) hue-rotate(25deg) opacity(90%);
+}
+
+.leaflet-popup-content {
+	margin: 7px 12px 5px 20px;
+}
+
+.leaflet-popup-content p {
+	margin: 0px;
+}
+
+.leaflet-popup-close-button {
+	top: 6px !important;
+	right: 12px !important;
+}
+
+.badge-pin {
+	position: absolute;
+	top: -9px;
+	right: -9px;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	padding: 5px;
+	font-size: 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10px;
+	height: 10px;
+	font-weight: bold;
+	z-index: 10000;
+}
+
+.pin-name {
+	position: absolute;
+	bottom: -17px;
+	background-color: #535353;
+	font-size: 0.625rem;
+	color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+
+.m-p-v2 {
+	background: #2db928;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.m-p-v2 svg {
+	width: 12px;
+	height: 12px;
+}
+
+.m-p-v2 path {
+	fill: #fff;
+}
+
+.m-g {
+	width: 50px;
+	height: 50px;
+	background-color: currentColor;
+	border-radius: 50%;
+	box-shadow: 0 0 20px 10px currentColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.m-g span {
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}

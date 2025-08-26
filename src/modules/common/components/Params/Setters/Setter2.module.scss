@@ -1,0 +1,24 @@
+@import 'styles/fontSizes.module.scss';
+@import 'styles/colors.module.scss';
+
+.number {
+	margin: 0 !important;
+	width: 80px;
+}
+
+.numeric {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.info {
+	color: #858585;
+	font-size: $fontSize-tiny;
+}

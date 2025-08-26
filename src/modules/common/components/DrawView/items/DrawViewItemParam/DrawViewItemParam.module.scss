@@ -1,0 +1,46 @@
+.pipe {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	-webkit-box-shadow: inset 0px 0px 3px 1px rgba(66, 68, 90, 1);
+	-moz-box-shadow: inset 0px 0px 3px 1px rgba(66, 68, 90, 1);
+	box-shadow: inset 0px 0px 3px 1px rgba(66, 68, 90, 1);
+}
+
+.label {
+	color: inherit;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+.empty {
+	color: #bbb;
+}
+
+.rect {
+	display: block;
+}
+
+.emptyParam {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 10pt;
+	background: #fff;
+	padding: 10px 12px;
+	width: 240px;
+	height: 59px;
+	color: #333;
+	box-sizing: border-box;
+	font-weight: 300;
+	border-radius: 5px;
+}
+
+.param {
+	width: 240px;
+	min-width: 240px;
+	height: 54px;
+}

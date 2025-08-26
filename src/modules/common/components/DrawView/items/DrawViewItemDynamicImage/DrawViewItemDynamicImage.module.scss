@@ -1,0 +1,45 @@
+.empty {
+	width: 150px;
+	height: 150px;
+	background: #eee;
+	font-size: 12px;
+	text-align: center;
+	border: 3px double #ddd;
+	color: #aaa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.image {
+	-webkit-user-drag: none;
+}
+
+.label {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	background: #000;
+	color: #fff;
+	padding: 2px 12px;
+	white-space: nowrap;
+	font-size: 0.7em;
+}
+
+.value {
+	content: attr(data-value);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background: #000;
+	color: #fff;
+	padding: 2px 12px;
+	white-space: nowrap;
+	font-size: 0.7em;
+}

@@ -1,0 +1,11 @@
+@import 'styles/rwd.module.scss';
+
+.dialog {
+	user-select: none;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+}
